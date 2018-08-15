@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type='text/css' href="/stylesheets/style.css">
+  <title>URL Shortener Microservice</title>
+</head>
+<body>
+
+  <div class="content">
+    <h2>API Project: URL Shortener Microservice</h2>
+    <h4>User Story:</h4>
+  <p>1. I can POST a URL to [project_url]/api/shorturl/new and I will receive a shortened URL in the JSON response.
+<br>Example : {"original_url":"www.google.com","short_url":1}</p>
+<p>2. If I pass an invalid URL that doesn't follow the http(s)://www.example.com(/more/routes) format, the JSON response will contain an error like {"error":"invalid URL"}<br>
+HINT: to be sure that the submitted url points to a valid site you can use the function dns.lookup(host, cb) from the dns core module.</p>
+<p>3. When I visit the shortened URL, it will redirect me to my original link.</p>
+<h3>Short URL Creation</h3>
+<p>example: POST [project_url]/api/shorturl/new - https://www.google.com</p>
+    <div class="posturl">
+      <p>URL to be shortened</p>
+      <form action="/api/shorturl/new" method="post">
+        <input type="text" name="url" id = "url">
+        <input type="submit" value="post">
+      </form>
+    </div>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/basic.js">
+
+</script>
+</body>
+</html>
