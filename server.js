@@ -24,6 +24,7 @@ res.status(200).sendFile(path.join(__dirname, 'public', 'index.html'));
 
   app.post('/api/shorturl/new', urlencodedParser, (req, res) => {
     console.log(req.body.url);
+    console.log(req.body);
     var url = req.body.url;
     url = url.replace(/(^\w+:|^)\/\//, '');
     console.log(url);
@@ -36,10 +37,7 @@ res.status(200).sendFile(path.join(__dirname, 'public', 'index.html'));
     }
   })
   })
-  // app.post("/api/shorturl/new",urlencodedParser, function(req, res) {
-  //   console.log(req.body);
-  //   res.send(req.body);
-  // });
+
 
 
 app.listen(port, () => {

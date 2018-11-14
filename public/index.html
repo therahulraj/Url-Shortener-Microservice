@@ -9,26 +9,29 @@
 </head>
 <body>
 
-  <div class="content">
-    <h2>API Project: URL Shortener Microservice</h2>
-    <h4>User Story:</h4>
-  <p>1. I can POST a URL to [project_url]/api/shorturl/new and I will receive a shortened URL in the JSON response.
-<br>Example : {"original_url":"www.google.com","short_url":1}</p>
-<p>2. If I pass an invalid URL that doesn't follow the http(s)://www.example.com(/more/routes) format, the JSON response will contain an error like {"error":"invalid URL"}<br>
-HINT: to be sure that the submitted url points to a valid site you can use the function dns.lookup(host, cb) from the dns core module.</p>
-<p>3. When I visit the shortened URL, it will redirect me to my original link.</p>
-<h3>Short URL Creation</h3>
-<p>example: POST [project_url]/api/shorturl/new - https://www.google.com</p>
-    <div class="posturl">
-      <p>URL to be shortened</p>
-      <form action="/api/shorturl/new" method="post">
-        <input type="text" name="url" id = "url">
-        <input type="submit" value="post">
-      </form>
+  <div class="data">
+    <div class="data-inside">
+      <h3>API Project: URL Shortener Microservice</h3>
+      <h5>User Story:</h5>
+      <p>1. I can POST a URL to <code>[project_url]/api/shorturl/new</code> and I will receive a shortened URL in the JSON response.<br>
+Example : <code>{"original_url":"www.google.com","short_url":1}</code></p>
+<p>2. If I pass an invalid URL that doesn't follow the <code>http(s)://www.example.com(/more/routes)</code> format, the JSON response will contain an error like <code>{"error":"invalid URL"}</code><br>
+HINT: to be sure that the submitted url points to a valid site you can use the function <code>dns.lookup(host, cb)</code> from the dns core module.</p>
+<p>3. When I visit the shortened URL, it will redirect me to my original link</p>
+<h5>Short URL Creation</h5>
+<p>example: <code>[project_url]/api/shorturl/new - https://www.google.com</code></p><p>
+  <form action="/api/shorturl/new" method="post">
+    <input value="http://www.mytuitionmaster.com" type="text" name="url" id = "url">
+    <input type="submit" value="post">
+  </form>
+</p>
+<h5>Example Usage:</h5>
+<p><code><a href="">[this_project_url]/api/shorturl/3</a></code></p>
+<p>by <a href="#">Rahul Raj</a></p>
     </div>
   </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="/js/basic.js">
+<!-- <script type="text/javascript" src="/js/basic.js"> -->
 
 </script>
 </body>
